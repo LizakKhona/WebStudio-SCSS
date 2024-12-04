@@ -1,0 +1,111 @@
+#underline-portfolio {
+    position: relative;
+}
+#underline-portfolio::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--underlinePagesColor);
+    border-radius: 2px;
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#underline-portfolio:hover::after  {
+    opacity: 1;
+}
+.buttons-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.button {
+    background-color: var(--bgTeamAndButtons);
+    color: var(--primaryTextColor);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px 22px;
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover,
+.button:focus  {
+    background-color: var(--bgHoverButtons);
+    color: var(--fourthTextColor);
+    box-shadow: 
+    0 2px 2px 0 rgba(0, 0, 0, 0.12),
+    0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 32px;
+    margin-top: 50px;
+}
+.offers-item {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    cursor: pointer;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.offers-item:hover {
+    box-shadow:
+    1px 4px 6px 0 rgba(0, 0, 0, 0.16),
+    0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+.thumb {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+}
+.offers-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 63px 24px;
+    background-color: var(--overlayBg);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--fourthTextColor);
+    transform: translateY(100%);
+
+    transition: transform 350ms;
+}
+.thumb:hover .offers-overlay,
+.thumb:focus .offers-overlay {
+    transform: translate(0);
+}
+.information {
+    padding: 20px 24px;
+    border-right: 1px solid var(--cardsBorder);
+    border-bottom: 1px solid var(--cardsBorder);
+    border-left: 1px solid var(--cardsBorder);
+}
+.offers-title {
+    color: var(--primaryTextColor);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+.offers-text {
+    color: var(--secondaryTextColor);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+}
