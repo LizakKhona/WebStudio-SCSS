@@ -1,35 +1,34 @@
-:root {
     /* Кольори */
     
-    --backgroundColor: #FFFFFF;
-    --primaryTextColor: #212121;
-    --secondaryTextColor: #757575;
-    --thirdTextColor: #2196F3;
-    --fourthTextColor: #FFFFFF;
-    --fifthTextColor: #ffffff99;
-    --bgHoverButtons: #2196F3;
-    --bgHeroSection: #2F303A;
-    --bgFooter: #2F303A;
-    --bgTeamAndButtons: #F5F4FA;
-    --bgTitleColor: #2f303acd;
-    --headerBorder: #ECECEC;
-    --cardsBorder: #EEEEEE;
-    --primaryIconsColor: #757575;
-    --secondaryIconsColor: #2196F3;
-    --thirdIconsColor: #FFFFFF;
-    --fourthIconsColor: #AFB1B8;
-    --fifthIconsColor: #ffffff1a;
-    --bgBackdropColor: #00000034;
-    --bgModalColor: #FFFFFF;
-    --borderButtonColor: #0000001a;
-    --inputBorderColor: #21212134;
-    --textareaPlaceholder: #75757580;
-    --bgFormButton: #188CE8;
-    --borderInputColor: #2196F3;
-    --borderInputEmail: #ffffff4d;
-    --underlinePagesColor: #2196F3;
-    --overlayBg: #2195f3e6;
+    $backgroundColor: #FFFFFF;
+    $primaryTextColor: #212121;
+    $secondaryTextColor: #757575;
+    $thirdTextColor: #2196F3;
+    $fourthTextColor: #FFFFFF;
+    $fifthTextColor: #ffffff99;
+    $bgHoverButtons: #2196F3;
+    $bgHeroSection: #2F303A;
+    $bgFooter: #2F303A;
+    $bgTeamAndButtons: #F5F4FA;
+    $bgTitleColor: #2f303acd;
+    $headerBorder: #ECECEC;
+    $cardsBorder: #EEEEEE;
+    $primaryIconsColor: #757575;
+    $secondaryIconsColor: #2196F3;
+    $thirdIconsColor: #FFFFFF;
+    $fourthIconsColor: #AFB1B8;
+    $fifthIconsColor: #ffffff1a;
+    $bgBackdropColor: #00000034;
+    $bgModalColor: #FFFFFF;
+    $borderButtonColor: #0000001a;
+    $inputBorderColor: #21212134;
+    $textareaPlaceholder: #75757580;
+    $bgFormButton: #188CE8;
+    $borderInputColor: #2196F3;
+    $borderInputEmail: #ffffff4d;
+    $underlinePagesColor: #2196F3;
+    $overlayBg: #2195f3e6;
+    
     /* Шрифти */
-    --font-family: "Roboto", sans-serif;
-    --second-family: "Raleway", sans-serif;
-}
+    $font-family: "Roboto", sans-serif;
+    $second-family: "Raleway", sans-serif;

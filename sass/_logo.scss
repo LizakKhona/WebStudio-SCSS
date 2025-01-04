@@ -1,0 +1,18 @@
+.logotype {
+    display: flex;
+}
+.footer__logotype {
+    margin-bottom: 20px;
+}
+.logotype__item {
+    color: $thirdTextColor;
+    font-family: $second-family;
+    font-size: 26px;
+
+    &--header {
+        color: $primaryTextColor;
+    }
+    &--footer {
+        color: $fourthTextColor;
+    }
+}
