@@ -1,14 +1,11 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 1600px;
-    margin: 0 auto;
+    @extend %geometry;
     background-color: $bgFooter;
 }
 .alignment {
-    display: flex;
-    column-gap: 70px;
-    align-items: start;
+    @include flex($align: start, $gap: 70px);
 }
 .address {
     font-style: normal;
@@ -35,8 +32,7 @@
     margin-bottom: 20px;
 }
 .network {
-    display: flex;
-    column-gap: 10px;
+    @include flex($align: center, $gap: 10px);
 }
 .network__link {
     background-color: $fifthIconsColor;
@@ -46,9 +42,7 @@
 }
 .mailing {
     margin-left: 23px;
-    display: flex;
-    column-gap: 12px;
-    align-items: end;
+    @include flex($align: end, $gap: 12px);
 }
 .mailing__label {
     text-transform: uppercase;
@@ -73,9 +67,7 @@
     }
 }
 .mailing__button {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+    @include flex($align: center, $gap: 10px);
     width: 200px;
     height: 50px;
     padding: 10px 28px;

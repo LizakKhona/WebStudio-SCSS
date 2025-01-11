@@ -6,8 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1600px;
-    margin: 0 auto;
+    @extend %geometry;
 }
 .hero-section__title {
     color: $fourthTextColor;
@@ -31,17 +30,13 @@
     text-align: center;
     border-radius: 4px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    margin: 30px auto 0;
 
     animation: tada 1100ms;
 }
 .features {
-    display: flex;
+    @include flex($align: start, $gap: 30px);
     justify-content: center;
-    column-gap: 30px;
-    align-items: start;
 }
 .section__heading {
     color: $primaryTextColor;
@@ -70,8 +65,7 @@
     line-height: 1.71;
 }
 .services {
-    display: flex;
-    column-gap: 30px;
+    @include flex($align: center, $gap: 30px);
 }
 .services__item {
     position: relative;
@@ -88,8 +82,7 @@
     color: $fourthTextColor;
 }
 .team {
-    display: flex;
-    column-gap: 30px;
+    @include flex($align: center, $gap: 30px);
 }
 .team__item {
     background-color: $backgroundColor;
@@ -108,8 +101,7 @@
     font-weight: 500;
     font-size: 16px;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin: 30px 0 10px;
 }
 .team__text {
     color: $secondaryTextColor;
@@ -120,8 +112,7 @@
 }
 .media {
     padding: 0 32px 30px;
-    display: flex;
-    column-gap: 10px;
+    @include flex($align: center, $gap: 10px);
 }
 .media__link {
     background-color: $thirdIconsColor;
@@ -147,8 +138,7 @@
     }
 }
 .partners {
-    display: flex;
-    column-gap: 30px;
+    @include flex($align: center, $gap: 30px);
 }
 .partners__svg {
     border: 1px solid $fourthIconsColor;

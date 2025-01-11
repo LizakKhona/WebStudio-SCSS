@@ -1,25 +1,18 @@
 .header {
-    width: 1600px;
-    margin: 0 auto;
-    padding-top: 24px;
-    padding-bottom: 25px;
+   @extend %geometry;
+    padding: 24px 0 25px;
     border-bottom: 1px solid $headerBorder;
     background-color: $backgroundColor;
 }
 .flex {
-    display: flex;
-    column-gap: 318px;
-    align-items: center;
+    @include flex($align: center, $gap: 318px);
     justify-content: space-between;
 }
 .nav {
-    display: flex;
-    column-gap: 93px;
-    align-items: center;
+    @include flex($align: center, $gap: 93px);
 }
 .menu {
-    display: flex;
-    column-gap: 50px;
+    @include flex($align: center, $gap: 50px);
 }
 .menu__link {
     color: $primaryTextColor;
@@ -55,16 +48,13 @@
     }
 }
 .contacts {
-    display: flex;
-    column-gap: 30px;
+    @include flex($align: center, $gap: 30px);
 }
 .contacts__link {
     color: $secondaryTextColor;
     font-weight: 500;
     letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+    @include flex($align: center, $gap: 10px);
     fill: $primaryIconsColor;
     cursor: pointer;
 

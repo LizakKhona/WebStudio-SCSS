@@ -1,7 +1,6 @@
 .buttons {
-    display: flex;
+    @include flex($align: center, $gap: 8px);
     justify-content: center;
-    column-gap: 8px;
 }
 .buttons__button {
     background-color: $bgTeamAndButtons;
@@ -27,10 +26,9 @@
     }
 }
 .offers {
-    display: flex;
+    @include flex($align: center, $gap: 30px);
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 30px;
     row-gap: 32px;
     margin-top: 50px;
 }

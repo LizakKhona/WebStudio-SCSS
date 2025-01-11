@@ -43,38 +43,39 @@ img {
 
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer, .section, .hero-section, .header {
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .header {
-  width: 1600px;
-  margin: 0 auto;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 24px 0 25px;
   border-bottom: 1px solid #ECECEC;
   background-color: #FFFFFF;
 }
 
 .flex {
   display: flex;
+  align-items: center;
   -moz-column-gap: 318px;
        column-gap: 318px;
-  align-items: center;
   justify-content: space-between;
 }
 
 .nav {
   display: flex;
+  align-items: center;
   -moz-column-gap: 93px;
        column-gap: 93px;
-  align-items: center;
 }
 
 .menu {
   display: flex;
+  align-items: center;
   -moz-column-gap: 50px;
        column-gap: 50px;
 }
@@ -111,6 +112,7 @@ img {
 
 .contacts {
   display: flex;
+  align-items: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -162,8 +164,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1600px;
-  margin: 0 auto;
 }
 
 .hero-section__title {
@@ -189,18 +189,16 @@ img {
   text-align: center;
   border-radius: 4px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  margin: 30px auto 0;
   animation: tada 1100ms;
 }
 
 .features {
   display: flex;
-  justify-content: center;
+  align-items: start;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  align-items: start;
+  justify-content: center;
 }
 
 .section__heading {
@@ -236,6 +234,7 @@ img {
 
 .services {
   display: flex;
+  align-items: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -258,6 +257,7 @@ img {
 
 .team {
   display: flex;
+  align-items: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -278,8 +278,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 30px 0 10px;
 }
 
 .team__text {
@@ -293,6 +292,7 @@ img {
 .media {
   padding: 0 32px 30px;
   display: flex;
+  align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
@@ -322,6 +322,7 @@ img {
 
 .partners {
   display: flex;
+  align-items: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -339,9 +340,10 @@ img {
 
 .buttons {
   display: flex;
-  justify-content: center;
+  align-items: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
+  justify-content: center;
 }
 
 .buttons__button {
@@ -364,10 +366,11 @@ img {
 
 .offers {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
   row-gap: 32px;
   margin-top: 50px;
 }
@@ -468,8 +471,10 @@ img {
   top: 8px;
   right: 8px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  justify-content: center;
   padding: 6px;
   border-radius: 50%;
   background-color: transparent;
@@ -560,9 +565,9 @@ img {
 
 .form__agreement {
   display: flex;
+  align-items: center;
   -moz-column-gap: 7px;
        column-gap: 7px;
-  align-items: center;
   position: relative;
   left: 13px;
 }
@@ -580,8 +585,6 @@ img {
 
 .form__link {
   text-decoration: underline;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: #2196F3;
 }
 
@@ -601,8 +604,6 @@ img {
 }
 
 .section {
-  width: 1600px;
-  margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #FFFFFF;
@@ -617,16 +618,14 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
-  margin: 0 auto;
   background-color: #2F303A;
 }
 
 .alignment {
   display: flex;
+  align-items: start;
   -moz-column-gap: 70px;
        column-gap: 70px;
-  align-items: start;
 }
 
 .address {
@@ -660,6 +659,7 @@ img {
 
 .network {
   display: flex;
+  align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
@@ -675,9 +675,9 @@ img {
 .mailing {
   margin-left: 23px;
   display: flex;
+  align-items: end;
   -moz-column-gap: 12px;
        column-gap: 12px;
-  align-items: end;
 }
 
 .mailing__label {

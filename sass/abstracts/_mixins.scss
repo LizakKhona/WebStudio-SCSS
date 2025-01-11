@@ -1,0 +1,5 @@
+@mixin flex($align, $gap) {
+    display: flex;
+    align-items: $align;
+    column-gap: $gap;
+}
