@@ -1,11 +1,23 @@
 .section {
-    @extend %geometry;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    width: 480px;
+    margin: 0 auto;
+    padding: 60px 0;
     background-color: $backgroundColor;
-
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
     &:nth-child(3) {
         padding-top: 0;
+        display: none;
+        @media screen and (min-width: 1200px) {
+            display: block;
+        }
     }
     
     &:nth-child(4) {

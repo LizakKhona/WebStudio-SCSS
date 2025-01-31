@@ -7,12 +7,14 @@
 .logotype__item {
     color: $thirdTextColor;
     font-family: $second-family;
-    font-size: 26px;
-
+    font-size: 24px;
     &--header {
         color: $primaryTextColor;
     }
     &--footer {
         color: $fourthTextColor;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
     }
 }

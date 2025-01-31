@@ -1,12 +1,14 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    @extend %geometry;
+    width: 1600px;
+    margin: 0 auto;
     background-color: $bgFooter;
 }
 .alignment {
     @include flex($align: start, $gap: 70px);
 }
+// настроить лого!!!
 .address {
     font-style: normal;
 }

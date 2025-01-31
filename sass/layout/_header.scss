@@ -1,18 +1,48 @@
 .header {
-   @extend %geometry;
-    padding: 24px 0 25px;
+    @extend %geometry;
+    padding: 16px 0;
     border-bottom: 1px solid $headerBorder;
     background-color: $backgroundColor;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding: 21px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
+        padding: 24px 0 25px;
+    }
 }
 .flex {
-    @include flex($align: center, $gap: 318px);
+    @media screen and (min-width: 768px) {
+        @include flex($align: center, $gap: 96px);
+    }
+    @media screen and (min-width: 1200px) {
+        @include flex($align: center, $gap: 318px);
+    }
     justify-content: space-between;
 }
 .nav {
-    @include flex($align: center, $gap: 93px);
+    @include flex($align: center, $gap: 276px);
+    @media screen and (min-width: 768px) {
+       @include flex($align: center, $gap: 87px); 
+    }
+    @media screen and (min-width: 1200px) {
+        @include flex($align: center, $gap: 92px);
+    }
+}
+.burger {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
 }
 .menu {
-    @include flex($align: center, $gap: 50px);
+    display: none;
+    @media screen and (min-width: 768px) {
+        @include flex($align: center, $gap: 50px);
+    }
 }
 .menu__link {
     color: $primaryTextColor;
@@ -48,23 +78,41 @@
     }
 }
 .contacts {
-    @include flex($align: center, $gap: 30px);
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;    
+        row-gap: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+        @include flex($align: center, $gap: 30px);
+        flex-direction: row;
+    }
 }
 .contacts__link {
-    color: $secondaryTextColor;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    @include flex($align: center, $gap: 10px);
-    fill: $primaryIconsColor;
-    cursor: pointer;
-
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        color: $thirdTextColor;
-        fill: $secondaryIconsColor;
+    @media screen and (min-width: 768px) {
+        color: $secondaryTextColor;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        @include flex($align: center, $gap: 10px);
+        fill: $primaryIconsColor;
+        cursor: pointer;
+    
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            color: $thirdTextColor;
+            fill: $secondaryIconsColor;
+        }
     }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
+    
 }
