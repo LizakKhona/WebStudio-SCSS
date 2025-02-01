@@ -8,13 +8,13 @@
     color: $thirdTextColor;
     font-family: $second-family;
     font-size: 24px;
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+    }
     &--header {
         color: $primaryTextColor;
     }
     &--footer {
         color: $fourthTextColor;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 26px;
     }
 }

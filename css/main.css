@@ -238,22 +238,22 @@ img {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
 }
+@media screen and (min-width: 1200px) {
+  .logotype__item {
+    font-size: 26px;
+  }
+}
 .logotype__item--header {
   color: #212121;
 }
 .logotype__item--footer {
   color: #FFFFFF;
 }
-@media screen and (min-width: 1200px) {
-  .logotype__item {
-    font-size: 26px;
-  }
-}
 
 .hero-section {
   padding: 118px 0;
   background-color: #2F303A;
-  background-image: url(../../images/heroSection/overlay-mobile.png), url(../../images/heroSection/bg-hero-section-mobile.jpg);
+  background-image: url(../images/heroSection/overlay-mobile.png), url(../images/heroSection/bg-hero-section-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -261,7 +261,7 @@ img {
 @media screen and (min-width: 768px) {
   .hero-section {
     width: 768px;
-    background-image: url(../../images/heroSection/overlay-tablet.png), url(../../images/heroSection/bg-hero-section-tablet.jpg);
+    background-image: url(../images/heroSection/overlay-tablet.png), url(../images/heroSection/bg-hero-section-tablet.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -269,7 +269,7 @@ img {
     width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../../images/heroSection/overlay-desktop.png), url(../../images/heroSection/bg-hero-section-desktop.jpg);
+    background-image: url(../images/heroSection/overlay-desktop.png), url(../images/heroSection/bg-hero-section-desktop.jpg);
   }
 }
 
@@ -465,12 +465,20 @@ img {
   }
 }
 
+.names {
+  padding: 30px 0 24px;
+}
+@media screen and (min-width: 1200px) {
+  .names {
+    padding: 30px 0 30px;
+  }
+}
+
 .team__title {
   color: #212121;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  margin: 30px 0 10px;
 }
 
 .team__text {
@@ -478,15 +486,15 @@ img {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
-  margin-bottom: 16px;
+  margin: 10px 0 16px;
 }
 
 .media {
-  padding: 0 32px 30px;
   display: flex;
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  justify-content: center;
 }
 
 .media__link {
@@ -517,13 +525,29 @@ img {
   align-items: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  flex-basis: calc((100% - 30px) / 2);
+  flex-wrap: wrap;
+  row-gap: 30px;
+  justify-content: center;
 }
 
 .partners__svg {
+  width: 210px;
+  height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .partners__svg {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .partners__svg {
+    width: 170px;
+  }
 }
 .partners__svg:hover {
   border: 1px solid #2196F3;
@@ -859,25 +883,74 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
+  width: 480px;
   margin: 0 auto;
   background-color: #2F303A;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1600px;
+  }
 }
 
 .alignment {
   display: flex;
-  align-items: start;
-  -moz-column-gap: 70px;
-       column-gap: 70px;
+  align-items: center;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  flex-direction: column;
+  row-gap: 60px;
+}
+@media screen and (min-width: 768px) {
+  .alignment {
+    display: flex;
+    align-items: start;
+    -moz-column-gap: 165px;
+         column-gap: 165px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .alignment {
+    display: flex;
+    align-items: start;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    align-items: start;
+  }
 }
 
 .address {
   font-style: normal;
 }
 
-.connection__item:nth-child(2) {
-  margin-top: 9px;
-  margin-bottom: 9px;
+.connection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 9px;
+}
+@media screen and (min-width: 1200px) {
+  .connection {
+    align-items: start;
+  }
 }
 
 .connection__post {
@@ -900,6 +973,19 @@ img {
   margin-bottom: 20px;
 }
 
+.net {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .net {
+    align-items: start;
+  }
+}
+
 .network {
   display: flex;
   align-items: center;
@@ -916,21 +1002,38 @@ img {
 }
 
 .mailing {
-  margin-left: 23px;
   display: flex;
-  align-items: end;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
+  align-items: center;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  flex-direction: column;
+  row-gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .mailing {
+    margin-left: 23px;
+    display: flex;
+    align-items: end;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+    flex-direction: row;
+  }
 }
 
 .mailing__label {
+  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .mailing__label {
+    text-align: start;
+  }
 }
 
 .mailing__input {
   display: block;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
   margin-top: 20px;
@@ -938,6 +1041,11 @@ img {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
   color: white;
+}
+@media screen and (min-width: 1200px) {
+  .mailing__input {
+    width: 358px;
+  }
 }
 .mailing__input::-moz-placeholder {
   font-weight: 400;
@@ -955,8 +1063,8 @@ img {
 .mailing__button {
   display: flex;
   align-items: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
   width: 200px;
   height: 50px;
   padding: 10px 28px;
@@ -968,6 +1076,12 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .mailing__button {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
 }
 
 .mailing__svg {

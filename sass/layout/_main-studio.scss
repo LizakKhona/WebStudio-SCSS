@@ -2,19 +2,19 @@
     @extend %geometry;
     padding: 118px 0;
     background-color: $bgHeroSection;
-    background-image: url(../../images/heroSection/overlay-mobile.png), url(../../images/heroSection/bg-hero-section-mobile.jpg);
+    background-image: url(../images/heroSection/overlay-mobile.png), url(../images/heroSection/bg-hero-section-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @media screen and (min-width: 768px) {
        width: 768px; 
-       background-image: url(../../images/heroSection/overlay-tablet.png), url(../../images/heroSection/bg-hero-section-tablet.jpg);
+       background-image: url(../images/heroSection/overlay-tablet.png), url(../images/heroSection/bg-hero-section-tablet.jpg);
     }
     @media screen and (min-width: 1200px) {
        width: 1600px; 
        padding-top: 200px;
        padding-bottom: 200px;
-       background-image: url(../../images/heroSection/overlay-desktop.png), url(../../images/heroSection/bg-hero-section-desktop.jpg);
+       background-image: url(../images/heroSection/overlay-desktop.png), url(../images/heroSection/bg-hero-section-desktop.jpg);
     }
 }
 .hero-section__title {
@@ -153,7 +153,6 @@
     }
 }
 .team__img {
-    // width: 450px;
     height: 460px;
     @media screen and (min-width: 768px) {
         height: 374px;
@@ -162,23 +161,28 @@
         height: 260px;
     }
 }
+.names {
+    padding: 30px 0 24px;
+    @media screen and (min-width: 1200px) {
+        padding: 30px 0 30px;
+    }
+}
 .team__title {
     color: $primaryTextColor;
     font-weight: 500;
     font-size: 16px;
     text-align: center;
-    margin: 30px 0 10px;
 }
 .team__text {
     color: $secondaryTextColor;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    margin-bottom: 16px;
+    margin: 10px 0 16px;
 }
 .media {
-    padding: 0 32px 30px;
     @include flex($align: center, $gap: 10px);
+    justify-content: center;
 }
 .media__link {
     background-color: $thirdIconsColor;
@@ -205,8 +209,20 @@
 }
 .partners {
     @include flex($align: center, $gap: 30px);
+    flex-basis: calc((100% - 30px) / 2);
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
 }
 .partners__svg {
+    width: 210px;
+    height: 92px;
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
     border: 1px solid $fourthIconsColor;
     border-radius: 4px;
     fill: $fourthIconsColor;
