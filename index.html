@@ -20,48 +20,65 @@
         <!-- Шапка сайту -->
         <header class="header">
             <div class="container flex">
-            <nav class="nav">
                 <a href="/" class="logotype">
                     <span class="logotype__item">Web</span>
                     <span class="logotype__item logotype__item--header">Studio</span>
                 </a>
-                <svg width="24" height="16" class="burger">
-                    <use href="./icons/sprite-burger.svg#icon-burger"></use>
-                </svg>
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="./index.html" class="menu__link menu__link--line">
-                            Студія
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./portfolio.html" class="menu__link">
-                            Портфоліо
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            Контакти
-                        </a>
-                    </li>
-                </ul>
+                <nav class="nav">
+                    <input type="checkbox" id="toggle" class="modal-menu">
+                    <label for="toggle" class="modal-label">
+                        <span class="modal-label__line"></span>
+                    </label>
+                    <div class="modal-menu-open">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="./index.html" class="menu__link menu__link--line">
+                                    Студія
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./portfolio.html" class="menu__link">
+                                    Портфоліо
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="contacts">
+                                <li class="contacts__item">
+                                  <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--sm">
+                                     <svg width="16" height="12" class="contacts__svg">
+                                         <use href="./icons/symbol-defs2.svg#icon-envelope"></use>
+                                     </svg>
+                                     info@devstudio.com</a>
+                                </li>
+                                <li class="contacts__item">
+                                 <a href="tel:+380961111111" class="contacts__link contacts__link--lg">
+                                     <svg width="10" height="16" class="contacts__svg">
+                                         <use href="./icons/symbol-defs2.svg#icon-smartphone"></use>
+                                     </svg>
+                                     +38 096 111 11 11</a>
+                                </li>
+                            </ul>
+                            <ul class="apps">
+                                <li class="apps__item">
+                                    <a href="#" class="apps__link">Instagram</a>
+                                </li>
+                                <li class="apps__item">
+                                    <a href="#" class="apps__link">Twitter</a>
+                                </li>
+                                <li class="apps__item">
+                                    <a href="#" class="apps__link">Facebook</a>
+                                </li>
+                                <li class="apps__item">
+                                    <a href="#" class="apps__link">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
             </nav>
-            <ul class="contacts">
-               <li class="contacts__item">
-                 <a href="mailto:info@devstudio.com" class="contacts__link">
-                    <svg width="16" height="12" class="contacts__svg">
-                        <use href="./icons/symbol-defs2.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a>
-               </li>
-               <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts__link">
-                    <svg width="10" height="16" class="contacts__svg">
-                        <use href="./icons/symbol-defs2.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-               </li>
-            </ul>
             </div>
         </header>
         <!-- Головна частина -->
