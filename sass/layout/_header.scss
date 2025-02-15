@@ -31,7 +31,6 @@
     }
     .modal-label {
         position: relative;
-        // top: 10px;
         right: 15px;
         display: block;
         width: 24px;
@@ -84,10 +83,8 @@
     .modal-menu:checked ~ .modal-menu-open {
         display: flex;
         flex-direction: column;
-        // row-gap: 36px;
     }
     .modal-menu:checked ~ .modal-label {
-        // top: 10px;
         right: 15px;
     }
     .contacts {
@@ -202,35 +199,33 @@
         display: none;
     }
 }
-
-    .apps {
-        @media screen and (min-width: 480px) {
-        display: flex;
-        column-gap: 10px;
-        align-items: center;
-        margin-top: 64px;
-        }
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
+.apps {
+    @media screen and (min-width: 480px) {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-top: 64px;
     }
-    .apps__item {
-        display: flex;
-        align-items: center;
+    @media screen and (min-width: 768px) {
+        display: none;
     }
-    .apps__item:nth-child(-n+3)::after {
-        content: "";
-        display: block;
-        width: 2px;
-        height: 22px;
-        margin-left: 10px;
-        // margin-right: 10px;
-        background-color: $inputBorderColor;
-    }
-    .apps__link {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        letter-spacing: 0.02em;
-        color: $thirdTextColor;
-    }
+}
+.apps__item {
+    display: flex;
+    align-items: center;
+}
+.apps__item:nth-child(-n+3)::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 22px;
+    margin-left: 10px;
+    background-color: $inputBorderColor;
+}
+.apps__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $thirdTextColor;
+}
