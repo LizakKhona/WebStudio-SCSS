@@ -60,18 +60,23 @@
         top: 6.67px;
     }
     .modal-menu:checked ~ .modal-label .modal-label__line {
+        top: 28.67px;
+        right: 22.33px;
+        position: fixed;
         transform: rotate(-45deg);
     }
     .modal-menu:checked ~ .modal-label .modal-label__line::before {
         top: 0;
         transform: rotate(0);
+        position: fixed;
     }
     .modal-menu:checked ~ .modal-label .modal-label__line::after {
         top: 0;
         transform: rotate(90deg);
+        position: fixed;
     }
     .modal-menu-open {
-        position: absolute;
+        position: fixed;
         z-index: 1;
         left: 0;
         top: 0;
