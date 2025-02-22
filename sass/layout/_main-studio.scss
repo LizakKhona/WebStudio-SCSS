@@ -2,19 +2,42 @@
     @extend %geometry;
     padding: 118px 0;
     background-color: $bgHeroSection;
-    background-image: url(../images/heroSection/overlay-mobile.png), url(../images/heroSection/bg-hero-section-mobile.jpg);
+    background-image: url(../../images/hero/overlay-hero-mobile-1x.png), url(../../images/hero/bg-hero-mobile-1x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: url(../images/hero/overlay-hero-mobile-2x.png), url(../images/hero/bg-hero-mobile-2x.png);
+        }
+    }
+
     @media screen and (min-width: 768px) {
        width: 768px; 
-       background-image: url(../images/heroSection/overlay-tablet.png), url(../images/heroSection/bg-hero-section-tablet.jpg);
+       background-image: url(../images/hero/overlay-hero-tablet-1x.png), url(../images/hero/bg-hero-tablet-1x.png);
+       @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: url(../images/hero/overlay-hero-tablet-2x.png), url(../images/hero/bg-hero-tablet-2x.png);
+        }
+       }
     }
+
     @media screen and (min-width: 1200px) {
        width: 1600px; 
        padding-top: 200px;
        padding-bottom: 200px;
-       background-image: url(../images/heroSection/overlay-desktop.png), url(../images/heroSection/bg-hero-section-desktop.jpg);
+       background-image: url(../images/hero/overlay-hero-desktop-1x.png), url(../images/hero/bg-hero-desktop-1x.png);
+       @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: url(../images/hero/overlay-hero-tablet-2x.png), url(../images/hero/bg-hero-desktop-2x.png);
+        }
+       }
     }
 }
 .hero-section__title {
