@@ -2,16 +2,14 @@
     @extend %geometry;
     padding: 118px 0;
     background-color: $bgHeroSection;
-    background-image: url(../../images/hero/overlay-hero-mobile-1x.png), url(../../images/hero/bg-hero-mobile-1x.png);
+    background-image: url(../images/hero/overlay-hero-mobile-1x.png), url(../images/hero/bg-hero-mobile-1x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero-section {
             background-image: url(../images/hero/overlay-hero-mobile-2x.png), url(../images/hero/bg-hero-mobile-2x.png);
-        }
     }
 
     @media screen and (min-width: 768px) {
@@ -20,9 +18,7 @@
        @media (min-device-pixel-ratio: 2),
        (min-resolution: 192dpi),
        (min-resolution: 2dppx) {
-        .hero-section {
             background-image: url(../images/hero/overlay-hero-tablet-2x.png), url(../images/hero/bg-hero-tablet-2x.png);
-        }
        }
     }
 
@@ -34,9 +30,7 @@
        @media (min-device-pixel-ratio: 2),
        (min-resolution: 192dpi),
        (min-resolution: 2dppx) {
-        .hero-section {
             background-image: url(../images/hero/overlay-hero-tablet-2x.png), url(../images/hero/bg-hero-desktop-2x.png);
-        }
        }
     }
 }
@@ -137,6 +131,12 @@
         position: relative;
     }
 }
+.services__box {
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+        height: 294px;
+    }
+}
 .services__title {
     @media screen and (min-width: 1200px) {
     position: absolute;
@@ -175,7 +175,8 @@
         flex-basis: 270px;
     }
 }
-.team__img {
+.team__box {
+    width: 100%;
     height: 460px;
     @media screen and (min-width: 768px) {
         height: 374px;

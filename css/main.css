@@ -389,13 +389,13 @@ img {
 .hero-section {
   padding: 118px 0;
   background-color: #2F303A;
-  background-image: url(../../images/hero/overlay-hero-mobile-1x.png), url(../../images/hero/bg-hero-mobile-1x.png);
+  background-image: url(../images/hero/overlay-hero-mobile-1x.png), url(../images/hero/bg-hero-mobile-1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-section .hero-section {
+  .hero-section {
     background-image: url(../images/hero/overlay-hero-mobile-2x.png), url(../images/hero/bg-hero-mobile-2x.png);
   }
 }
@@ -406,7 +406,7 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero-section .hero-section {
+  .hero-section {
     background-image: url(../images/hero/overlay-hero-tablet-2x.png), url(../images/hero/bg-hero-tablet-2x.png);
   }
 }
@@ -419,7 +419,7 @@ img {
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero-section .hero-section {
+  .hero-section {
     background-image: url(../images/hero/overlay-hero-tablet-2x.png), url(../images/hero/bg-hero-desktop-2x.png);
   }
 }
@@ -556,6 +556,13 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .services__box {
+    width: 370px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .services__title {
     position: absolute;
     bottom: 0;
@@ -602,16 +609,17 @@ img {
   }
 }
 
-.team__img {
+.team__box {
+  width: 100%;
   height: 460px;
 }
 @media screen and (min-width: 768px) {
-  .team__img {
+  .team__box {
     height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .team__img {
+  .team__box {
     height: 260px;
   }
 }
@@ -788,9 +796,9 @@ img {
 
 .offers__thumb {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: 294px;
-  overflow: hidden;
 }
 
 .offers__overlay {
