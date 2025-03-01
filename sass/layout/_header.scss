@@ -166,7 +166,7 @@
     }
 }
 .contacts__item:first-child {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         order: 1;
     }
 }
@@ -200,7 +200,7 @@
     }
 }
 .contacts__svg {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }
